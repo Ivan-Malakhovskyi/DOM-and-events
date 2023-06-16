@@ -18,5 +18,10 @@ function onSubmit(event) {
   if (email.value === "" || password.value === "") {
     alert("Вам необхідно заповнити всі поля!");
   }
+
   console.log(data);
+  event.currentTarget.reset();
 }
+
+//*email.value.length = 0
+//! !email.value.length or email.value
