@@ -20,6 +20,6 @@ ingredients.forEach((ingredient) => {
   const element = document.createElement("li");
   element.textContent = ingredient;
   element.classList.add("item");
-  addListitemEl.append(element);
-  arr.push(ingredient);
+  arr.push(element);
 });
+addListitemEl.append(...arr);
