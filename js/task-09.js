@@ -13,6 +13,7 @@ function getRandomHexColor() {
 }
 
 function onChangeBackgroundColor() {
-  selectors.body.style.backgroundColor = getRandomHexColor();
-  selectors.color.textContent = getRandomHexColor();
+  const changeColor = getRandomHexColor();
+  selectors.body.style.backgroundColor = changeColor;
+  selectors.color.textContent = changeColor;
 }

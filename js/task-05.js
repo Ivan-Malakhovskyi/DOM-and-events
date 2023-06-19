@@ -9,11 +9,11 @@ selectors.output.addEventListener("change", handlerGetCurrentInput);
 function handlerMakeCurrentEnter(evt) {
   const inputQuery = evt.currentTarget.value;
 
-  selectors.output.textContent = inputQuery ? inputQuery : "Anonymous";
+  selectors.output.textContent = inputQuery.trim() ? inputQuery : "Anonymous";
 }
 
 function handlerGetCurrentInput(evt) {
-  const outputQuery = evt.currentTarget.textContent;
+  const outputQuery = evt.currentTarget.textContent.trim();
 
   selectors.input.value = outputQuery !== "Anonymous" ? outputQuery : "";
 }

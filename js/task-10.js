@@ -17,6 +17,7 @@ refs.buttonDestroy.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
   amount = Number(refs.input.value);
+  destroyBoxes();
   const boxes = [];
   for (let i = 0; i < amount; i += 1) {
     const boxSize = 30 + i * 10;

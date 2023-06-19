@@ -11,12 +11,13 @@ function onSubmit(event) {
   const { email, password } = event.currentTarget.elements;
 
   const data = {
-    userEmail: email.value,
-    userPassword: password.value,
+    email: email.value,
+    password: password.value,
   };
 
   if (email.value === "" || password.value === "") {
     alert("Вам необхідно заповнити всі поля!");
+    return;
   }
 
   console.log(data);
